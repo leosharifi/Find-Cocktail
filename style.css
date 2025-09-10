@@ -11,9 +11,19 @@ body {
 
     h1 {
         color: purple;
-        margin: 5px;
-        font-size: 2em;
+        margin: 5px 0;
         text-align: center;
+        span {
+            vertical-align: middle;
+            font-size: 1.5em;
+        }
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            vertical-align: middle;
+            margin-right: -10px;
+        }
     }
     p {
       color: rgb(62, 61, 61);
@@ -80,11 +90,17 @@ body {
 @media (min-width: 320px) {
   body div {
     padding: 20px;
-    h1 {
-      font-size: 1.5em;
-    }
     p {
       font-size: 0.9em;
+    }
+    h1 {
+        span {
+            font-size: 1em;
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
     }
     .searchSection {
       flex-direction: column;
