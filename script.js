@@ -19,7 +19,7 @@ function getFetch(e) {
             document.getElementById('cocktailDisplay').innerHTML = '<h3>Try Another Search!</h3>';
             return;
         }
-        document.getElementById('cocktailDisplay').innerHTML += `
+        document.getElementById('cocktailDisplay').innerHTML = `
             <h3>${data.drinks[0].strDrink}</h3>
             <p>${data.drinks[0].strInstructions}</p>
             <img src="${data.drinks[0].strDrinkThumb}" alt="">
