@@ -55,10 +55,10 @@ body {
         text-align: left;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       h3 {
-        font-size: 1em;
+        font-size: 1.5em;
         color: darkblue;
         padding: 10px 5px;
-        text-align: center;
+        text-align: left;
       }
       p {
         font-size: 1.2em;
