@@ -3,6 +3,7 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
+  color: yellow;
 }
 
 body {
@@ -48,6 +49,7 @@ body {
     input {
       padding: 10px;
       border: none;
+      color: black;
       box-shadow: 0 0 5px rgb(255, 255, 255);
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
