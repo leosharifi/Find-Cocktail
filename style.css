@@ -1,7 +1,15 @@
+* {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: black;
   div {
     padding: 50px;
     display: flex;
@@ -10,7 +18,7 @@ body {
     flex-direction: column;
 
     h1 {
-        color: purple;
+        color: yellow;
         margin: 5px 0;
         text-align: center;
         span {
@@ -26,7 +34,7 @@ body {
         }
     }
     p {
-      color: rgb(62, 61, 61);
+      color: white;
       text-align: center;
       font-size: 1em;
     }
@@ -40,7 +48,7 @@ body {
     input {
       padding: 10px;
       border: none;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 5px rgb(255, 255, 255);
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
       font-size: 0.8em;
@@ -53,71 +61,103 @@ body {
       padding: 10px;
       margin-left: -6px;
       border: none;
-      background: purple;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      background: blue;
+      box-shadow: 0 0 5px rgb(255, 255, 255);
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       color: white;
       font-size: 0.8em;
+      font-weight: 800;
     }
     #cocktailDisplay {
-        margin: 20px 0 0 0;
-        text-align: left;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      h3 {
-        font-size: 1.5em;
-        color: darkblue;
-        padding: 10px 5px;
-        text-align: left;
-      }
-      p {
-        font-size: 1.2em;
-        color: darkgreen;
-        text-align: left;
-        max-width: 490px;
-      }
-      img {
-        margin-top: 10px;
-        width: 100%;
-        height: 200px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        object-fit: cover;
-      }
+        
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        .cocktailList {
+          box-shadow: 0 0 10px rgb(255, 255, 255);
+          border-radius: 10px;
+          margin: 50px 0 30px 0;
+          text-align: center;
+          padding: 10px;
+          h3 {
+            font-size: 1.5em;
+            color: yellow;
+            text-align: left;
+          }
+          p {
+            font-size: 1em;
+            color: white;
+            text-align: left;
+            max-width: 500px;
+          }
+          img {
+            margin-top: 10px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgb(255, 255, 255);
+            object-fit: cover;
+          }
+        }
+      
     }
   }
 }
-@media (min-width: 320px) {
-  body div {
-    padding: 20px;
-    p {
-      font-size: 0.9em;
-    }
-    h1 {
+
+/* Small devices (phones, less than 600px) */
+@media screen and (max-width: 600px) {
+  body {
+    div {
+      padding: 20px;
+
+      h1 {
+        font-size: 1.2em;
         span {
-            font-size: 1em;
+          vertical-align: middle;
+          font-size: 1em;
         }
         img {
-            width: 40px;
-            height: 40px;
+          width: 30px;
+          height: 30px;
+          margin-right: 0;
         }
-    }
-    .searchSection {
-      flex-direction: column;
+      }
+
+      p {
+        font-size: 0.9em;
+      }
+
+      .searchSection {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+      }
+
       input, button {
         width: 100%;
-        margin: 5px 0;
-        border-radius: 5px;
-      }
-      button {
+        font-size: 0.9em;
         margin-left: 0;
+        border-radius: 5px;
+        margin-bottom: 10px;
       }
-    }
-    #cocktailDisplay p {
-      font-size: 1em;
-    }
-    #cocktailDisplay img {
-      height: auto;
+
+      #cocktailDisplay {
+        .cocktailList {
+          margin: 20px 0;
+          padding: 5px;
+
+          h3 {
+            font-size: 1em;
+          }
+          p {
+            font-size: 0.6em;
+            width: 100%;
+          }
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
     }
   }
 }

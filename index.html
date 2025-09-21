@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
     <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/065/682/170/non_2x/a-blue-cocktail-glass-with-ice-and-liquid-on-transparent-background-free-png.png" image portfolioicon>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <title>Cocktail Finder</title>
 </head>
 <body>
     <div>
         <h1>
             <img src="https://static.vecteezy.com/system/resources/previews/065/682/170/non_2x/a-blue-cocktail-glass-with-ice-and-liquid-on-transparent-background-free-png.png" alt="">
-            <span>Cocktail Finder</span>
+            <span>Cocktail Finder!</span>
         </h1>
         <p>Search and discover your favorite cocktails!</p>
         <section id="searchSection">
@@ -19,9 +26,13 @@
             <button id="searchButton">Search</button>
         </section>
         
-        <section id="cocktailDisplay">
+        <div id="cocktailDisplay">
+            <section class="cocktaiList">
+                <!-- Cocktail list will be displayed here -->
+
+            </section>
             <!-- Cocktail details will be displayed here -->
-        </section>
+        </div>
     </div>
     
     <script src="script.js"></script>
