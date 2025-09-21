@@ -15,13 +15,13 @@ function getFetch(e) {
             document.getElementById('cocktailDisplay').innerHTML = '<h3>Please Enter a Cocktail Name!</h3>';
             return;
         }
-        else if(data.drinks === null) {
+        if(data.drinks === null) {
             document.getElementById('cocktailDisplay').innerHTML = '<h3>Try Another Search!</h3>';
             return;
         }
+        document.getElementById('cocktailDisplay').innerHTML = ''
         data.drinks.forEach(drink => {
             document.querySelector('#cocktailDisplay').innerHTML += `
-            
                 <section class="cocktailList">
                     <h3>${drink.strDrink}</h3>
                     <p>${drink.strInstructions}</p>
